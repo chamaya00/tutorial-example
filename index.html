@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #764ba2;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 40px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+
+        .hobbies {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .hobbies li {
+            font-size: 1.1rem;
+            color: #555;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #f8f9ff, #fff);
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .hobbies li:hover {
+            transform: translateX(10px);
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .hobbies li::before {
+            content: "✦ ";
+            color: #764ba2;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .hobbies li:hover::before {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .bio {
+                font-size: 1rem;
+                text-align: left;
+            }
+
+            .hobbies li {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>John Doe</h1>
+        <p class="subtitle">Developer • Designer • Creative Thinker</p>
+
+        <p class="bio">
+            Welcome to my personal website! I'm a passionate professional with a love for creating
+            meaningful experiences and solving complex problems. With a background in technology and
+            design, I strive to blend creativity with functionality in everything I do. I believe in
+            continuous learning, collaboration, and making a positive impact through my work and interests.
+        </p>
+
+        <h2>My Favorite Hobbies</h2>
+        <ul class="hobbies">
+            <li>Photography - Capturing beautiful moments and landscapes</li>
+            <li>Hiking - Exploring nature trails and mountain peaks</li>
+            <li>Reading - Diving into science fiction and philosophy books</li>
+            <li>Cooking - Experimenting with international cuisines</li>
+            <li>Playing Guitar - Creating music and learning new songs</li>
+        </ul>
+
+        <footer>
+            <p>&copy; 2025 John Doe. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
